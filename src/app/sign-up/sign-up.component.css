@@ -83,6 +83,9 @@ input[type="password" i]:focus {
     font-weight: 400;
     line-height: 40.3px;
 }
+.login-link {
+    color: black;
+}
 
 .mb-5 {
     margin-bottom: 0rem !important;
