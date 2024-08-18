@@ -1,135 +1,139 @@
-
-/* General Styles */
-
 body, html {
-       margin: 0;
-   padding: 0;
-   overflow-x: hidden; /* Prevent horizontal scroll */
- }
-    
- .container-fluid {
-   /* padding: 0; */
- }
-    
- .col-lg-6 {
-   height: 100vh; /* Full viewport height */
- }
-    
- .img-fluid {
-   height: 100%; /* Fill the container's height */
-   width: 100%;  /* Fill the container's width */
-   object-fit: cover; /* Cover the container without stretching */
- }
-    
- .sign-in-form {
-   max-width: 700px;
-      width: 100%;
-      padding: 1.875em;
-      background-color: #fff;
-      border-radius: 8px;
-      box-shadow: none;
-    }
-    /* .footer{
-    //   position: absolute;
-    //   bottom: 0;
-    //   right: 0;
-    // } */
-    
-     .sign-in-form .footer {
-       margin-top: auto; /* Pushes the footer to the bottom */
-       text-align: end;
+  margin: 0;
+padding: 0;
+overflow-x: hidden; /* Prevent horizontal scroll */
+}
 
-     }
-     input[type="text" i]:focus{
-       /* display: none ; */
-       /* border: none; */
-       box-shadow: none !important;
-    
-      
-     }
-     .mb-0 {
-     margin-bottom: none;
-     }
-    
-     .sign-in-form img {
-       max-width: 100px;
-     }
-     .mb-5 {
-      margin-bottom: 0rem !important;
-      margin-right: 1rem;
-  }
-    
-     .sign-in-form .btn-block {
-       width: 100%;
-     }
-    
-     .d-flex {
-       display: flex;
-       justify-content: space-between;
-     }
-    
- .flex-fill {
-       flex: 1;
-     }
-    
-     .gap-2 {
-       gap: 8px; /* Adjust the gap between the buttons as needed */
-     } 
-    
-     .button-color{
-       background-color: #FF6600;
-       color:white;
-     }
-     .button-border{
-       border-color: black;
-     }
-     .form-control{
-       border: none;
-       border-bottom: 1px solid black;
-       border-radius: 0;
-     }
-     .btn-outline-primary {
-       color: black; /* Text color */
-       border-color: black; /* Border color */
-     }
-    
-     .sign-in-form h2 {
-       font-size: 24px;
-       color: #FF6600; /* STIHL's orange color */
-     }
-    
-     .text-center span {
-       font-size: 14px;
-       color: #777;
-     }
-    
-     .imgoflogo {
-       width: 256.89px;
-       height: 3em;
-     }
-    
-     .sign {
-       font-family: Inter, sans-serif;
-      font-size: 30.22px;
-      font-weight: 600;
-      line-height: 40.3px;
-      text-align: left;
- }
-    
-     .text-center {
-       text-align: center;
-    }
-    .text-end{
-      font-family: Inter;
+.container-fluid {
+/* padding: 0; */
+}
+
+.col-lg-6 {
+height: 100vh; /* Full viewport height */
+}
+
+.img-fluid {
+height: 100%; /* Fill the container's height */
+width: 100%;  /* Fill the container's width */
+object-fit: cover; /* Cover the container without stretching */
+}
+
+.sign-in-form {
+max-width: 700px;
+ width: 100%;
+ padding: 1.875em;
+ background-color: #fff;
+ border-radius: 8px;
+ box-shadow: none;
+}
+/* .footer{
+//   position: absolute;
+//   bottom: 0;
+//   right: 0;
+// } */
+
+.sign-in-form .footer {
+  margin-top: auto; /* Pushes the footer to the bottom */
+  text-align: end;
+
+}
+input[type="text" i]:focus{
+  /* display: none ; */
+  /* border: none; */
+  box-shadow: none !important;
+
+ 
+}
+.mb-0 {
+margin-bottom: none;
+}
+
+.sign-in-form img {
+  max-width: 100px;
+}
+.mb-5 {
+ margin-bottom: 0rem !important;
+ margin-right: 1rem;
+}
+
+.sign-in-form .btn-block {
+  width: 100%;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-fill {
+  flex: 1;
+}
+
+.gap-2 {
+  gap: 8px; /* Adjust the gap between the buttons as needed */
+} 
+
+.button-color{
+  background-color: #FF6600;
+  color:white;
+}
+.button-border{
+  border-color: black;
+}
+.form-control{
+  border: none;
+  border-bottom: 1px solid black;
+  border-radius: 0;
+}
+.btn-outline-primary {
+  color: black; /* Text color */
+  border-color: black; /* Border color */
+}
+
+.sign-in-form h2 {
+  font-size: 24px;
+  color: #FF6600; /* STIHL's orange color */
+}
+
+.text-center span {
+  font-size: 14px;
+  color: #777;
+}
+
+.imgoflogo {
+  width: 256.89px;
+  height: 3em;
+}
+
+.sign {
+  font-family: Inter, sans-serif;
+ font-size: 30.22px;
+ font-weight: 600;
+ line-height: 40.3px;
+ text-align: left;
+}
+
+.text-center {
+  text-align: center;
+  font-family: Inter;
+font-size: 20.38px;
+font-weight: 700;
+line-height: 27.17px;
+letter-spacing: 0.08em;
+text-align: left;
+
+}
+.text-end{
+ font-family: Inter;
 font-size: 16.12px;
 font-weight: 600;
 line-height: 40.3px;
 letter-spacing: 0.08em;
 text-align: left;
- color: #868686;
+color: #868686;
 
-    }
-    .color1{
+}
+.color1{
 
 color: #FF6600;
 margin-top: 3rem;
@@ -137,11 +141,9 @@ font-family: Inter;
 font-size: 16.12px;
 font-weight: 400;
 line-height: 40.3px;
-    }
-    @media (max-width: 767.98px) {
-       .sign-in-form {
-         padding: 20px;
-       }
-    }
-    
-    
+}
+@media (max-width: 767.98px) {
+  .sign-in-form {
+    padding: 20px;
+  }
+}

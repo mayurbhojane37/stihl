@@ -78,7 +78,7 @@ input[type="password" i]:focus {
 
 .color1 {
     color: #FF6600;
-    margin-top: 4rem;
+    margin-top: 3rem;
     font-family: Inter;
     font-size: 16.12px;
     font-weight: 400;
@@ -95,7 +95,8 @@ input[type="password" i]:focus {
 
 .imgoflogo {
     width: 256.89px;
-    height: 3em;
+    height: 4em;
+    
 }
 
 .text-center {
