@@ -54,6 +54,7 @@ input[type="password" i]:focus {
 .button-color {
     background-color: #FF6600;
     color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .button-border {
@@ -105,7 +106,7 @@ input[type="password" i]:focus {
     text-align: left;
 }
 
-/* Responsive Adjustments */
+
 @media (max-width: 767.98px) {
     .sign-up-form {
         padding: 20px;
@@ -117,13 +118,13 @@ input[type="password" i]:focus {
         max-width: 100%;
     }
 
-    /* Align buttons vertically */
+    
     .d-flex.gap-5 {
         flex-direction: column;
         gap: 1rem;
     }
 
-    /* Adjust image and form column layout */
+    
     .col-lg-6 {
         height: auto;
     }
