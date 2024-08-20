@@ -1,0 +1,154 @@
+<div class="container">
+  
+    <form [formGroup]="myForm" (ngSubmit)="onSubmit()" *ngIf="!isSubmitted">
+      <!-- Step 1 -->
+      <ng-container *ngIf="step === 1" formGroupName="userDetails">
+        <div class="product-selection-form">
+          <button type="button" class="back-button mb-2" *ngIf="step > 1" (click)="goBack()">← Back</button>
+          <h2>What type of product are you looking for?</h2>
+          <div class="product-options">
+            <button type="button" (click)="selectProduct('Gardening Tools')">Gardening Tools</button>
+            <button type="button" (click)="selectProduct('Power Tools')">Power Tools</button>
+            <button type="button" (click)="selectProduct('Cleaning Equipment')">Cleaning Equipment</button>
+            <button type="button" (click)="selectProduct('Lawn Care')">Lawn Care</button>
+          </div>
+          <div class="step-indicator">
+            <span>1 of 6</span>
+          </div>
+        </div>
+      </ng-container>
+  
+      <!-- Step 2 -->
+      <ng-container *ngIf="step === 2" formGroupName="userDetails">
+        <div class="product-selection-form">
+          <button type="button" class="back-button" (click)="goBack()">← Back</button>
+          <h2>What is your experience level with using these products?</h2>
+          <div class="product-options">
+            <button type="button" (click)="selectProduct('Beginner')">Beginner</button>
+            <button type="button" (click)="selectProduct('Intermediate')">Intermediate</button>
+            <button type="button" (click)="selectProduct('Advanced')">Advanced</button>
+          </div>
+          <div class="step-indicator">
+            <span>2 of 6</span>
+          </div>
+        </div>
+      </ng-container>
+  
+      <!-- Step 3 -->
+      <ng-container *ngIf="step === 3" formGroupName="userDetails">
+        <div class="product-selection-form">
+          <button type="button" class="back-button" (click)="goBack()">← Back</button>
+          <h2>What is the primary purpose of your gardening tools?</h2>
+          <div class="product-options">
+            <button type="button" (click)="selectProduct('Sawing and cutting')">Sawing and cutting</button>
+            <button type="button" (click)="selectProduct('Mowing and planting')">Mowing and planting</button>
+            <button type="button" (click)="selectProduct('Pruning and trimming')">Pruning and trimming</button>
+          </div>
+          <div class="step-indicator">
+            <span>3 of 6</span>
+          </div>
+        </div>
+      </ng-container>
+  
+      <!-- Step 4 -->
+      <ng-container *ngIf="step === 4" formGroupName="userDetails">
+        <div class="product-selection-form">
+          <button type="button" class="back-button" (click)="goBack()">← Back</button>
+          <h2>What is the typical size of the area you need to work with?</h2>
+          <div class="product-options">
+            <button type="button" (click)="selectProduct('Small')">Small</button>
+            <button type="button" (click)="selectProduct('Medium')">Medium</button>
+            <button type="button" (click)="selectProduct('Large')">Large</button>
+          </div>
+          <div class="step-indicator">
+            <span>4 of 6</span>
+          </div>
+        </div>
+      </ng-container>
+  
+      <!-- Step 5 -->
+      <ng-container *ngIf="step === 5" formGroupName="userDetails">
+        <div class="product-selection-form">
+          <button type="button" class="back-button mb-5" (click)="goBack()">← Back</button>
+          <h2>Do you have any budget constraints?</h2>
+          <div class="product-options mb-4">
+            <button type="button" (click)="selectProduct('Under ₹20,000')">Under ₹20,000</button>
+            <button type="button" (click)="selectProduct('₹20,000 - ₹30,000')">₹20,000 - ₹30,000</button>
+            <button type="button" (click)="selectProduct('Over ₹30,000')">Over ₹30,000</button>
+          </div>
+          <div class="step-indicator">
+            <span>5 of 6</span>
+          </div>
+        </div>
+      </ng-container>
+  
+      <!-- Step 6 -->
+      <ng-container *ngIf="step === 6" formGroupName="userDetails">
+        <div class="product-selection-form">
+            <div class="d-flex justify-content-between align-items-center mb-5">
+                <h1 class="heading-title">
+                    We’ve Found the Perfect 
+                    <span class="highlighted-text">Match for You!</span>
+                </h1>
+                <button class="btn custom-btn btn-lg" (click)="retakeQuiz()">Retake Quiz</button>
+            </div>
+            <div class="row_container">
+                <div class="card custom-card">
+                    <img src="../../assets/images/image 28.png" class="card-img-top img-back" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">MSA 160 Cordless Chainsaw - AP system</h5>
+                        <p class="card-text">Flexible cordless chainsaw for a range of uses.</p>
+                        <span class="price">
+                            <p style="font-weight: 800;">₹28,385</p>&nbsp;
+                            <p style="margin-left: 18px;"><del>₹40,000</del></p>
+                        </span>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-outline btn-block btn-sm" style="color: #FF6900; border: 1px solid #FF6900; background-color: white;"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to Cart</button>
+                    </div>
+                </div>
+                
+
+                <div class="card custom-card">
+                    <img src="../../assets/images/image 28.png" class="card-img-top img-back" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">MSA 160 Cordless Chainsaw - AP system</h5>
+                        <p class="card-text">Flexible cordless chainsaw for a range of uses.</p>
+                        <span class="price">
+                            <p style="font-weight: 800;">₹28,385</p>&nbsp;
+                            <p style="margin-left: 18px;"><del>₹40,000</del></p>
+                        </span>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-outline btn-block btn-sm" style="color: #FF6900; border: 1px solid #FF6900; background-color: white;"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card custom-card">
+                    <img src="../../assets/images/image 28.png" class="card-img-top img-back" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">MSA 160 Cordless Chainsaw - AP system</h5>
+                        <p class="card-text">Flexible cordless chainsaw for a range of uses.</p>
+                        <span class="price">
+                            <p style="font-weight: 800;">₹28,385</p>&nbsp;
+                            <p style="margin-left: 18px;"><del>₹40,000</del></p>
+                        </span>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-outline btn-block btn-sm" style="color: #FF6900; border: 1px solid #FF6900; background-color: white;"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-container>
+    
+
+    
+  
+    </form>
+  
+    <ng-container *ngIf="isSubmitted">
+      <h2 class="text-success">Form Submitted Successfully</h2>
+    </ng-container>
+  </div>
+  
