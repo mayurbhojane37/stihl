@@ -1,0 +1,215 @@
+.sub_categories{
+    color: rgba(102, 102, 102, 1);
+}
+
+#points {
+    width: 100%;
+    
+}/* Base style for the range input */
+input[type="range"] {
+    -webkit-appearance: none; /* Remove default styling in WebKit browsers */
+    width: 100%; /* Full width of the container */
+    height: 8px; /* Height of the track */
+    background: transparent; /* Transparent background to apply custom track styling */
+    border-radius: 5px; /* Rounded corners for the track */
+    outline: none; /* Remove outline */
+    padding: 0; /* Remove default padding */
+}
+
+/* Style for the track in WebKit browsers (Chrome, Safari) */
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px;
+    background: rgba(255, 105, 0, 0.3); /* Light orange track color */
+    border-radius: 5px;
+}
+
+/* Style for the thumb (handle) in WebKit browsers */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px; /* Height of the thumb */
+    width: 20px; /* Width of the thumb */
+    background: rgba(255, 105, 0, 1); /* Thumb color */
+    border-radius: 50%; /* Round shape */
+    cursor: pointer; /* Pointer cursor on hover */
+    position: relative;
+    margin-top: -6px; /* Adjust thumb to align with track */
+}
+
+/* Style for the track in Firefox */
+input[type="range"]::-moz-range-track {
+    width: 100%;
+    height: 8px;
+    background: rgba(255, 105, 0, 0.3); /* Light orange track color */
+    border-radius: 5px;
+}
+
+/* Style for the thumb (handle) in Firefox */
+input[type="range"]::-moz-range-thumb {
+    height: 20px;
+    width: 20px;
+    background: rgba(255, 105, 0, 1); /* Thumb color */
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Style for the track in Internet Explorer */
+input[type="range"]::-ms-track {
+    width: 100%;
+    height: 8px;
+    background: transparent; /* Transparent track to style using fill-lower and fill-upper */
+    border-color: transparent; /* Remove border */
+    color: transparent; /* Remove color */
+}
+
+/* Style for the track fill in Internet Explorer */
+input[type="range"]::-ms-fill-lower {
+    background: rgba(255, 105, 0, 0.3); /* Light orange track color up to the thumb */
+    border-radius: 5px;
+}
+
+/* Style for the track fill above the thumb in Internet Explorer */
+input[type="range"]::-ms-fill-upper {
+    background: rgba(200, 200, 200, 0.5); /* Light gray color from thumb to end */
+    border-radius: 5px;
+}
+
+/* Style for the thumb (handle) in Internet Explorer */
+input[type="range"]::-ms-thumb {
+    height: 20px;
+    width: 20px;
+    background: rgba(255, 105, 0, 1); /* Thumb color */
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.range-values {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+.custom-select {
+    position: relative;
+    width: 100%; /* Full width as specified in the HTML */
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none; /* Remove all borders */
+    border-bottom: 2px solid #ccc; /* Add only a bottom border */
+    background-color: #fff;
+    cursor: pointer;
+    appearance: none;
+    border-radius: 0; /* Ensure there are no rounded corners */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+select:focus {
+    border-bottom-color: #007bff; /* Change the bottom border color on focus */
+    outline: none;
+    box-shadow: none; /* Remove the box-shadow */
+}
+
+.custom-select::after {
+    content: '▼';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #000;
+}
+
+.custom-select select::-ms-expand {
+    display: none; /* For Internet Explorer */
+}
+
+
+.value-border {
+    width: 30%;
+    text-align: center;
+    padding: 5px 10px; /* Add some padding around the values */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    background-color: #f8f9fa; /* Optional: Add a light background color */
+    font-weight: bold; /* Optional: Make the text bold */
+}
+
+
+.custom-list {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 0;
+    background-color: #f8f9fa; /* Light gray background */
+    border-radius: 5px;
+    overflow: hidden; /* Ensures round corners are maintained */
+}
+
+.custom-list li {
+    padding: 10px 15px;
+    border-bottom: 1px solid #dee2e6; /* Adds a divider between items */
+    font-weight: 500; /* Slightly bold text */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    cursor: pointer;
+}
+.custom-list li h6{
+    font-size: 12px;
+}
+
+.custom-list li:last-child {
+    border-bottom: none; /* Remove border from the last item */
+}
+
+.custom-list li:hover {
+    background-color: #dfdfdf; /* Bootstrap primary color on hover */
+    color: rgb(0, 0, 0); /* White text color on hover */
+    border-left: 2px solid rgba(255, 105, 0, 1)
+}
+
+
+
+.product_image{
+    height: 100%;
+    width: 100%;
+}
+.product_card{
+    width: 100% !important;
+    border-radius: 15px !important;
+    border: none !important;
+    box-shadow: 0 2px 4px 0 rgba(136, 144, 195, 0.2),
+    0 5px 15px 0 rgba(37, 44, 97, 0.15);
+    height: auto !important;
+}
+.product-card{
+    border: none;
+    padding: 10px;
+}
+.product_img{
+    background-color: #e4e4e4;
+    height: 100% !important;
+    width: 100% !important;
+}
+.product_title{
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 4px;
+}
+.product_description{
+    margin-top: -10px;
+    font-size: 10px;
+}
+.product_price{
+    margin-top: -10px;
+    font-weight: 500;
+    font-size: 12px;
+}
+.save_price{
+    font-size: 12px;
+    color: rgba(36, 155, 62, 1);
+    font-weight: 700;
+}

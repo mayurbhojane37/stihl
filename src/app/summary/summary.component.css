@@ -1,0 +1,274 @@
+/* Step Indicator Styles */
+.step-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the start (left side) */
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+
+.step {
+    width: 45px; /* Consistent width for all steps */
+    height: 45px; /* Consistent height for all steps */
+    background-color: #ffffff;
+    color: #909194;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    border: 1px solid #909194;
+    margin-right: 10px;
+    margin-bottom: 10px; /* Add bottom margin for spacing when stacked */
+}
+
+.step-title {
+    font-size: 16px;
+    color: #bfbfbf;
+    margin-left: 10px;
+}
+
+/* Adjust active step styling */
+.active {
+    background-color: #f5811f;
+    color: white;
+}
+
+.active-title {
+    color: #000;
+    font-family: Inter;
+    font-size: 24.25px;
+    font-weight: 500;
+    line-height: 40.3px;
+    text-align: left;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .step-indicator {
+        flex-direction: column; /* Stack steps vertically on smaller screens */
+        align-items: flex-start;
+    }
+
+    .step {
+        width: 35px; /* Smaller width for mobile screens */
+        height: 35px;
+        font-size: 12px;
+        margin-right: 0; /* Remove right margin when stacked */
+    }
+
+    .step-title, .active-title {
+        font-size: 14px; /* Reduce font size */
+        line-height: 20px; /* Adjust line height */
+        margin-left: 0; /* Remove left margin when stacked */
+        margin-bottom: 15px; /* Space between step titles */
+    }
+}
+
+@media (max-width: 480px) {
+    .step {
+        width: 35px; /* Smaller width for very small screens */
+        height: 35px;
+        font-size: 10px;
+    }
+
+    .step-title, .active-title {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+  
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+  
+  .btn-orange {
+    background-color: #ff6600;
+    color: white;
+  }
+  
+  .btn-orange:hover {
+    background-color: #e65c00;
+  }
+  
+  .footer {
+    background-color: #f8f9fa;
+    padding: 15px 0;
+   bottom: 0;
+   margin-top: auto;
+   margin-bottom: 0%;
+  }
+  
+  .footer i {
+    color: #001325B8;
+    margin-right: 5px;
+  }
+  .text1{
+    font-family: Inter;
+font-size: 26.61px;
+font-weight: 400;
+line-height: 21.61px;
+text-align: left;
+
+  }
+  .text2{
+    font-family: Inter;
+font-size: 15px;
+font-weight: 400;
+line-height: 27.61px;
+letter-spacing: 0.13807018101215363px;
+text-align: left;
+
+  }
+  .text-button{
+    font-family: Montserrat Alternates;
+font-size: 16px;
+font-weight: 400;
+line-height: 21.1px;
+text-align: left;
+color: #080808;
+
+  }
+  .price-details {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.5rem; /* Space between elements */
+  }
+  
+  .price-details .text-danger {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    color: #e65c00;
+  }
+  
+  .price-details del {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .text9{
+    font-family: Inter;
+font-size: 24px;
+font-weight: 550;
+line-height: 21.61px;
+
+
+  }
+  
+  .price-details .text-success {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    color:  #969696;
+    ;
+  }
+  .line{
+    border-top: 1px solid #22222222;
+  }
+  .price-det{
+    font-family: Inter;
+font-size: 26px;
+font-weight: 600;
+line-height: 32px;
+text-align: left;
+
+  }
+  .right-text{
+    font-family: Inter;
+font-size: 22px;
+font-weight: 400;
+line-height: 32px;
+text-align: center;
+
+  }
+  .left-side{
+    font-family: Inter;
+font-size: 22.23px;
+font-weight: 300;
+line-height: 37.84px;
+letter-spacing: -0.1576792448759079px;
+text-align: right;
+color: #818181;
+
+  }
+  .cart-d{
+    font-family: Inter;
+font-size: 32px;
+font-weight: 400;
+line-height: 40px;
+text-align: left;
+
+  }
+
+
+
+.cart-d {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+.cart-d::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px; 
+    background-color: #ff6600; 
+    position: absolute;
+    bottom: 5px; 
+    left: 0;
+}
+.mb-3 {
+    margin-bottom: 0rem !important;
+}
+
+.size-img{
+    width: 200.74px;
+height: 60px;
+gap: 0px;
+opacity: 0px;
+margin-right: 7rem;
+
+}
+.foter{
+    margin-left: 1rem;
+}
+#Select1 {
+    display: flex;
+    justify-content: space-between;
+}
+.pam1{
+    font-family: Inter;
+font-size: 20px;
+font-weight: 550;
+line-height: 21.61px;
+text-align: left;
+
+}
+.cash{
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 550;
+    line-height: 21.61px;
+    
+    
+
+}
+.cash1{
+    margin-right: 1rem;
+}
+.pric{
+    color: #FF6900;
+}
+.text-danger {
+    --bs-text-opacity: 1;
+    color: rgb(216, 80, 17) !important;
+}
+
+ 
+  
+  

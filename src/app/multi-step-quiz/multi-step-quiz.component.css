@@ -1,4 +1,6 @@
+
 .product-selection-form {
+  
     text-align: center;
     max-width: 100%;
     margin: 0 auto;
@@ -133,3 +135,161 @@
 .mb-5 {
     margin-bottom: 0rem !important;
 }
+
+/* Removed unnecessary styles */
+
+/* Base style for the range input */
+input[type="range"] {
+  -webkit-appearance: none; /* Remove default styling in WebKit browsers */
+  width: 100%; /* Full width of the container */
+  height: 8px; /* Height of the track */
+  background: transparent; /* Transparent background to apply custom track styling */
+  border-radius: 5px; /* Rounded corners for the track */
+  outline: none; /* Remove outline */
+  padding: 0; /* Remove default padding */
+}
+
+/* Style for the track in WebKit browsers (Chrome, Safari) */
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8px;
+  background: rgba(255, 105, 0, 0.3); /* Light orange track color */
+  border-radius: 5px;
+}
+
+/* Style for the thumb (handle) in WebKit browsers */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px; /* Height of the thumb */
+  width: 20px; /* Width of the thumb */
+  background: rgba(255, 105, 0, 1); /* Thumb color */
+  border-radius: 50%; /* Round shape */
+  cursor: pointer; /* Pointer cursor on hover */
+  position: relative;
+  margin-top: -6px; /* Adjust thumb to align with track */
+}
+
+/* Style for the track in Firefox */
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 8px;
+  background: rgba(255, 105, 0, 0.3); /* Light orange track color */
+  border-radius: 5px;
+}
+
+/* Style for the thumb (handle) in Firefox */
+input[type="range"]::-moz-range-thumb {
+  height: 20px;
+  width: 20px;
+  background: rgba(255, 105, 0, 1); /* Thumb color */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Style for the track in Internet Explorer */
+input[type="range"]::-ms-track {
+  width: 100%;
+  height: 8px;
+  background: transparent; /* Transparent track to style using fill-lower and fill-upper */
+  border-color: transparent; /* Remove border */
+  color: transparent; 
+}
+
+
+input[type="range"]::-ms-fill-lower {
+  background: rgba(255, 105, 0, 0.3); 
+  border-radius: 5px;
+}
+
+
+input[type="range"]::-ms-fill-upper {
+  background: rgba(200, 200, 200, 0.5);
+  border-radius: 5px;
+}
+
+
+input[type="range"]::-ms-thumb {
+  height: 20px;
+  width: 20px;
+  background: rgba(255, 105, 0, 1); 
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.custom-select {
+  position: relative;
+  width: 100%; 
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none; 
+  border-bottom: 2px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  appearance: none;
+  border-radius: 0; 
+  transition: border-color 0.3s ease; 
+}
+
+select:focus {
+  border-bottom-color: #007bff; 
+  outline: none;
+  box-shadow: none; /* Remove the box-shadow */
+}
+
+.custom-select::after {
+  content: '▼';
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #000;
+}
+
+.custom-select select::-ms-expand {
+  display: none; /* For Internet Explorer */
+}
+
+.product_card {
+  width: 100% !important;
+  border-radius: 15px !important;
+  border: none !important;
+  box-shadow: 0 2px 4px 0 rgba(136, 144, 195, 0.2),
+              0 5px 15px 0 rgba(37, 44, 97, 0.15);
+  height: auto !important;
+}
+
+.product-card {
+  border: none;
+  padding: 10px;
+}
+
+.product_img {
+  background-color: #e4e4e4;
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.product_image {
+  height: 100%;
+  width: 100%;
+}
+
+.product_title {
+  font-weight: bold;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.mb-5[_ngcontent-ng-c2956432797] {
+  margin-bottom: 5rem !important;
+}
+
+.mb-5[_ngcontent-ng-c1276527211] {
+  margin-bottom: 4rem !important;
+}
+

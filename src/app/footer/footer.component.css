@@ -3,7 +3,7 @@
     background-color: #2c2c2c;
     color: #f5f5f5;
     padding: 20px 10px;
-    font-family: Arial, sans-serif;
+    font-family: Inter;
 }
 /* .footer-logo{
     width: 166px;
@@ -51,8 +51,11 @@ opacity: 0px;
     padding-left: 20px;
     margin: 0;
 }
-.no{
+.no a{
+    /* font-family: Inter; */
     list-style-type: disc;  
+    color: white !important;
+    text-decoration: none;
 }
 
 .footer-col ul li {
@@ -62,11 +65,13 @@ opacity: 0px;
 }
 
 .footer-col ul li a {
+    /* font-family: Inter; */
     color: #f5f5f5;
     text-decoration: none;
 }
 
 .footer-col ul li a:hover {
+   
     text-decoration: underline;
 }
 .footer-bottoms{
@@ -86,7 +91,7 @@ opacity: 0px;
 }
 
 .all-right {
-    font-family: Inter;
+    /* font-family: Inter; */
     font-size: 14px;
     font-weight: 400;
     line-height: 26.67px;
@@ -103,6 +108,14 @@ opacity: 0px;
 }
 .all-rights{
     width: 260px;
+}
+.contact-info{
+    font-family: Inter;
+font-size: 15px;
+font-weight: 400;
+line-height: 26.67px;
+text-align: left;
+
 }
 
 /* Responsive Design */

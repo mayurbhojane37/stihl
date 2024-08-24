@@ -83,72 +83,103 @@
       </ng-container>
   
       <!-- Step 6 -->
-      <ng-container *ngIf="step === 6" formGroupName="userDetails">
-        <div class="product-selection-form">
-            <div class="d-flex justify-content-between align-items-center mb-5">
-                <h1 class="heading-title">
-                    We’ve Found the Perfect 
-                    <span class="highlighted-text">Match for You!</span>
-                </h1>
-                <button class="btn custom-btn btn-lg" (click)="retakeQuiz()">Retake Quiz</button>
-            </div>
-            <div class="row_container">
-                <div class="card custom-card">
-                    <img src="../../assets/images/image 28.png" class="card-img-top img-back" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">MSA 160 Cordless Chainsaw - AP system</h5>
-                        <p class="card-text">Flexible cordless chainsaw for a range of uses.</p>
-                        <span class="price">
-                            <p style="font-weight: 800;">₹28,385</p>&nbsp;
-                            <p style="margin-left: 18px;"><del>₹40,000</del></p>
-                        </span>
-                    </div>
-                    <div class="card-footer">
-                        <button class="btn btn-outline btn-block btn-sm" style="color: #FF6900; border: 1px solid #FF6900; background-color: white;"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to Cart</button>
-                    </div>
+      <ng-container *ngIf="step === 6" formGroupName="userDetails" class="mb-5">
+
+
+        <div class="d-flex justify-content-between align-items-center mb-4 mt-4">
+          <h1 class="heading-title">
+              We’ve Found the Perfect 
+              <span class="highlighted-text">Match for You!</span>
+          </h1>
+          <button class="btn custom-btn btn-lg" (click)="retakeQuiz()">Retake Quiz</button>
+      </div>
+
+
+        <div class="row mb-5">
+          <!-- Product Card 1 -->
+          <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+            <div class="card product_card">
+              <div class="product-card">
+                <div class="product_img">
+                  <img src="../../assets/images/image 30.png" alt="Product Image" class="img-fluid product_image">
                 </div>
+                <p class="product_title">MSA 160 Cordless Chainsaw - AP system</p>
+                <p class="product_description">Flexible cordless chainsaw for a range of uses</p>
+                <div class="product_price">
+                  <span>₹28,385</span>&nbsp;&nbsp;
+                  <span class="old-price"><del>₹40,000</del></span>
+                </div>
+                <hr>
+                <div class="save_price d-flex align-items-center justify-content-between">
+                  <button class="btn btn-outline btn-block btn-sm" style="color: #FF6900; border: 1px solid #FF6900; background-color: white;">
+                    <i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Product Card 2 -->
+          <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+            
+            <div class="card product_card">
+              <div class="product-card">
+                <div class="product_img">
+                  <img src="../../assets/images/image 30.png" alt="Product Image" class="img-fluid product_image">
+                </div>
+                <p class="product_title">MSA 160 Cordless Chainsaw - AP system</p>
+                <p class="product_description">Flexible cordless chainsaw for a range of uses</p>
+                <div class="product_price">
+                  <span>₹28,385</span>&nbsp;&nbsp;
+                  <span class="old-price"><del>₹40,000</del></span>
+                </div>
+                <hr>
+                <div class="save_price d-flex align-items-center justify-content-between">
+                  <button class="btn btn-outline btn-block btn-sm" style="color: #FF6900; border: 1px solid #FF6900; background-color: white;">
+                    <i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to Cart
+                  </button>
                 
-
-                <div class="card custom-card">
-                    <img src="../../assets/images/image 28.png" class="card-img-top img-back" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">MSA 160 Cordless Chainsaw - AP system</h5>
-                        <p class="card-text">Flexible cordless chainsaw for a range of uses.</p>
-                        <span class="price">
-                            <p style="font-weight: 800;">₹28,385</p>&nbsp;
-                            <p style="margin-left: 18px;"><del>₹40,000</del></p>
-                        </span>
-                    </div>
-                    <div class="card-footer">
-                        <button class="btn btn-outline btn-block btn-sm" style="color: #FF6900; border: 1px solid #FF6900; background-color: white;"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to Cart</button>
-                    </div>
                 </div>
-
-                <div class="card custom-card">
-                    <img src="../../assets/images/image 28.png" class="card-img-top img-back" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">MSA 160 Cordless Chainsaw - AP system</h5>
-                        <p class="card-text">Flexible cordless chainsaw for a range of uses.</p>
-                        <span class="price">
-                            <p style="font-weight: 800;">₹28,385</p>&nbsp;
-                            <p style="margin-left: 18px;"><del>₹40,000</del></p>
-                        </span>
-                    </div>
-                    <div class="card-footer">
-                        <button class="btn btn-outline btn-block btn-sm" style="color: #FF6900; border: 1px solid #FF6900; background-color: white;"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to Cart</button>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
+      
+          <!-- Product Card 3 -->
+          <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+            <div class="card product_card">
+              <div class="product-card">
+                <div class="product_img">
+                  <img src="../../assets/images/image 30.png" alt="Product Image" class="img-fluid product_image">
+                </div>
+                <p class="product_title">MSA 160 Cordless Chainsaw - AP system</p>
+                <p class="product_description">Flexible cordless chainsaw for a range of uses</p>
+                <div class="product_price">
+                  <span>₹28,385</span>&nbsp;&nbsp;
+                  <span class="old-price"><del>₹40,000</del></span>
+                </div>
+                <hr>
+                <div class="save_price d-flex align-items-center justify-content-between">
+                  <button class="btn btn-outline btn-block btn-sm" style="color: #FF6900; border: 1px solid #FF6900; background-color: white;">
+                    <i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to Cart
+                  </button>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Add more product cards as needed -->
         </div>
-    </ng-container>
+      </ng-container>
+      
     
 
     
   
     </form>
   
-    <ng-container *ngIf="isSubmitted">
+    <!-- <ng-container *ngIf="isSubmitted">
       <h2 class="text-success">Form Submitted Successfully</h2>
-    </ng-container>
+    </ng-container> -->
   </div>
   
