@@ -1,3 +1,5 @@
+<app-header></app-header>
+
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -7,6 +9,7 @@
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
             aria-label="Slide 3"></button>
     </div>
+    <!-- carousel indicators -->
     <div class="carousel-inner">
         <div class="carousel-item active">
             <img class="d-block w-100" src="../../assets/images/back1.png" alt="First slide">
@@ -19,16 +22,37 @@
         </div>
     </div>
 </div>
-<div class="container">
-    <div>
-        HomePage > Sawing and Cutting > Chainsaws
+
+<!-- this is imporatnat for many components -->
+<div class="row d-flex mt-4">
+    <div class="col d-flex align-items-center justify-content-center">
+        <img src="../../assets/images/image 22.png" alt="">
+        <p>All Battery Products</p>
+    </div>
+    <div class="col d-flex align-items-center ">
+        <img src="../../assets/images/image 22.png" alt="">
+        <p>Cleaning and tidying</p>
+    </div>
+    <div class="col d-flex align-items-center ">
+        <img src="../../assets/images/image 22.png" alt="">
+        <p>Sawing and Cutting</p>
+    </div>
+    <div class="col d-flex align-items-center ">
+        <img src="../../assets/images/image 22.png" alt="">
+        <p>Mowing and planting</p>
     </div>
 </div>
 
-<div class="container mt-3 mb-5">
+
+<div class="container mt-3 mb-5"  style="background-color: #F3F3F3;">
+    <div class="container mb-1" style="background-color: #F3F3F3;">
+        <div>
+            HomePage > Sawing and Cutting > Chainsaws
+        </div>
+    </div>
     <div class="row">
         <div class="col-12 col-md-4">
-            <div class="card">
+            <div class="card h-100" style="background-color: white;">
                 <div class="card-body">
                     <h5 class="sub_categories">Sub Categories</h5>
                     <ul class="list-unstyled custom-list">
@@ -302,9 +326,11 @@
                             </div>
                         </div>
                     </div>
-                    <!-- End repeat block -->
+                  
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<app-footer></app-footer>

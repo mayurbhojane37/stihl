@@ -85,7 +85,7 @@ opacity: 0px;
     justify-content: space-between;
     font-size: 12px;
     color: #7e7e7e;
-    padding-top: 10px;
+    /* padding-top: 10px; */
     text-align: center;
     align-items: center
 }
