@@ -101,9 +101,12 @@ margin-bottom: none;
 }
 
 .imgoflogo {
-  width: 256.89px;
-  height: 3em;
+  /* width: 256.89px; */
+  height: 4em;
+   /* height: 4em; */
+  width: 200.89px; 
 }
+
 
 .sign {
   font-family: Inter, sans-serif;

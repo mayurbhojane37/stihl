@@ -1,6 +1,6 @@
 /* Container Styling */
 .container-fluid {
-    background-color: #fff;
+    background-color: #f0eeee;
     margin: 0 !important;
     padding: 0 !important;
 }
@@ -72,12 +72,14 @@ ol li {
 
 /* Header Row Styling */
 .header-row {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 0px solid #ddd;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
     flex-wrap: wrap;
+    background-color: black;
+    color: white;
 }
 
 /* Menu Button and Logo Styling */
@@ -101,7 +103,7 @@ ol li {
     border: 1px solid rgb(241, 235, 235);
     border-radius: 10px;
     padding: 0.45rem;
-    background-color: #EDEDED;
+    background-color: #020202;
     flex: 1;
     margin-left: 10px;
     max-width: 400px; /* Adjust max-width to prevent overflow */
@@ -111,12 +113,21 @@ ol li {
     width: 100%;
     padding: 5px;
     flex: 1;
+   
+
 }
 
 .form-control {
     border: none !important;
-    background-color: #EDEDED;
+    background-color: #020202;
     width: 100%;
+    color: white;
+}
+
+/* Placeholder text color */
+.form-control::placeholder {
+    color: white;
+    opacity: 1; /* Ensure the placeholder text is fully opaque */
 }
 
 /* Media Query for Tablets (max-width: 768px) */
@@ -154,6 +165,7 @@ ol li {
 
     .header-icon-1 {
         font-size: 14px;
+        color: white;
     }
 
     .sthiltxt {
@@ -235,3 +247,161 @@ ol li {
         justify-content: center;
     }
 }
+
+/* .imgphoto{
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #ff6600; */
+/* } */
+
+
+.product_card{
+    width: 100% !important;
+    border-radius: 15px !important;
+    border: none !important;
+    box-shadow: 0 2px 4px 0 rgba(136, 144, 195, 0.2),
+    0 5px 15px 0 rgba(37, 44, 97, 0.15);
+    height: auto !important;
+}
+.product-card{
+    border: none;
+    padding: 10px;
+}
+.product_img{
+    /* background-color: #e4e4e4; */
+    height: 100% !important;
+    width: 100% !important;
+}
+.product_title{
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 4px;
+}
+.product_description{
+    margin-top: -10px;
+    font-size: 10px;
+}
+.product_price{
+    margin-top: -10px;
+    font-weight: 500;
+    font-size: 12px;
+}
+.save_price{
+    font-size: 12px;
+    color: rgba(36, 155, 62, 1);
+    font-weight: 700;
+}
+
+
+
+
+
+.cart-d{
+    font-family: Inter;
+font-size: 28px;
+font-weight: 400;
+line-height: 35px;
+text-align: left;
+
+  }
+  .cart-text {
+    color: #666666;
+}
+
+
+.details-text {
+    color: #ff6600; 
+}
+
+
+.cart-d {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+.cart-d::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px; 
+    background-color: #ff6600; 
+    position: absolute;
+    bottom: 5px; 
+    left: 0;
+}
+
+.size{
+    position: relative;
+   width: 150px;
+height: 150px;
+border: 1px solid orangered;
+border-radius: 50%;
+background-color: white;
+
+}
+.imgphoto1{
+    width: 145px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    
+    }
+    .circle1{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .ShopCategories{
+        margin: auto;
+        padding: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ShopCategories .image{
+        margin:5%;
+        position: relative;
+width: 90%;
+height: 257px;
+border: 1px solid black;
+border-radius: 23px;
+background-color: #F5F5F5;
+    }
+    .ShopCategories .image img{
+        /* width: 85%; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    }
+
+    .percentage-text {
+        color: #FF6900;
+        font-family: Inter;
+font-size: 22px;
+font-weight: 400;
+line-height: 26.67px;
+text-align: center;
+
+    }
+    .per-1{
+        font-family: Inter;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 26.67px;
+        text-align: center; 
+    }
+    .per2{
+        font-family: Inter;
+font-size: 18px;
+font-weight: 400;
+line-height: 26.67px;
+text-align: center;
+color: #666666;
+
+    }
+    

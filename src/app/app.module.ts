@@ -9,7 +9,6 @@ import { MultiStepQuizComponent } from './multi-step-quiz/multi-step-quiz.compon
 import { ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
-import { CheckoutComponent } from './checkout/checkout.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CartDetailsComponent } from './cart-details/cart-details.component';
 import { ShippingDetailsComponent } from './shipping-details/shipping-details.component';
@@ -18,7 +17,9 @@ import { SummaryComponent } from './summary/summary.component';
 import { CompareProductsComponent } from './compare-products/compare-products.component';
 import { WishlistComponent } from './wishlist/wishlist.component';
 import { Battery1Component } from './battery1/battery1.component';
-
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { NewsletterComponent } from './newsletter/newsletter.component';
 
 
 @NgModule({
@@ -29,7 +30,7 @@ import { Battery1Component } from './battery1/battery1.component';
     MultiStepQuizComponent,
     FooterComponent,
     HeaderComponent,
-    CheckoutComponent,
+   
     CartDetailsComponent,
     ShippingDetailsComponent,
     PaymentDetailsComponent,
@@ -37,6 +38,9 @@ import { Battery1Component } from './battery1/battery1.component';
     CompareProductsComponent,
     WishlistComponent,
     Battery1Component,
+    SidebarComponent,
+    LandingPageComponent,
+    NewsletterComponent,
 
   ],
   imports: [

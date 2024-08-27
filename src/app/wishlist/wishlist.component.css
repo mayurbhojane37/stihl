@@ -1,41 +1,39 @@
-/* Removed unnecessary styles */
 
-/* Base style for the range input */
+
+
 input[type="range"] {
-    -webkit-appearance: none; /* Remove default styling in WebKit browsers */
-    width: 100%; /* Full width of the container */
-    height: 8px; /* Height of the track */
-    background: transparent; /* Transparent background to apply custom track styling */
-    border-radius: 5px; /* Rounded corners for the track */
-    outline: none; /* Remove outline */
-    padding: 0; /* Remove default padding */
+    -webkit-appearance: none; 
+    width: 100%; 
+    height: 8px; 
+    background: transparent; 
+    border-radius: 5px;
+    outline: none; 
+    padding: 0;
 }
 
-/* Style for the track in WebKit browsers (Chrome, Safari) */
+
 input[type="range"]::-webkit-slider-runnable-track {
     width: 100%;
     height: 8px;
-    background: rgba(255, 105, 0, 0.3); /* Light orange track color */
+    background: rgba(255, 105, 0, 0.3); 
     border-radius: 5px;
 }
 
-/* Style for the thumb (handle) in WebKit browsers */
 input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
-    height: 20px; /* Height of the thumb */
-    width: 20px; /* Width of the thumb */
-    background: rgba(255, 105, 0, 1); /* Thumb color */
-    border-radius: 50%; /* Round shape */
-    cursor: pointer; /* Pointer cursor on hover */
+    height: 20px; 
+    width: 20px;
+    background: rgba(255, 105, 0, 1); 
+    border-radius: 50%; 
+    cursor: pointer; 
     position: relative;
-    margin-top: -6px; /* Adjust thumb to align with track */
+    margin-top: -6px; 
 }
 
-/* Style for the track in Firefox */
 input[type="range"]::-moz-range-track {
     width: 100%;
     height: 8px;
-    background: rgba(255, 105, 0, 0.3); /* Light orange track color */
+    background: rgba(255, 105, 0, 0.3);
     border-radius: 5px;
 }
 
@@ -43,7 +41,7 @@ input[type="range"]::-moz-range-track {
 input[type="range"]::-moz-range-thumb {
     height: 20px;
     width: 20px;
-    background: rgba(255, 105, 0, 1); /* Thumb color */
+    background: rgba(255, 105, 0, 1); 
     border-radius: 50%;
     cursor: pointer;
 }
@@ -52,20 +50,20 @@ input[type="range"]::-moz-range-thumb {
 input[type="range"]::-ms-track {
     width: 100%;
     height: 8px;
-    background: transparent; /* Transparent track to style using fill-lower and fill-upper */
-    border-color: transparent; /* Remove border */
-    color: transparent; /* Remove color */
+    background: transparent;
+    border-color: transparent; 
+    color: transparent; 
 }
 
 /* Style for the track fill in Internet Explorer */
 input[type="range"]::-ms-fill-lower {
-    background: rgba(255, 105, 0, 0.3); /* Light orange track color up to the thumb */
+    background: rgba(255, 105, 0, 0.3); 
     border-radius: 5px;
 }
 
 /* Style for the track fill above the thumb in Internet Explorer */
 input[type="range"]::-ms-fill-upper {
-    background: rgba(200, 200, 200, 0.5); /* Light gray color from thumb to end */
+    background: rgba(200, 200, 200, 0.5); 
     border-radius: 5px;
 }
 
@@ -73,33 +71,33 @@ input[type="range"]::-ms-fill-upper {
 input[type="range"]::-ms-thumb {
     height: 20px;
     width: 20px;
-    background: rgba(255, 105, 0, 1); /* Thumb color */
+    background: rgba(255, 105, 0, 1); 
     border-radius: 50%;
     cursor: pointer;
 }
 
 .custom-select {
     position: relative;
-    width: 100%; /* Full width as specified in the HTML */
+    width: 100%; 
 }
 
 select {
     width: 100%;
     padding: 10px;
     font-size: 16px;
-    border: none; /* Remove all borders */
-    border-bottom: 2px solid #ccc; /* Add only a bottom border */
+    border: none; 
+    border-bottom: 2px solid #ccc;
     background-color: #fff;
     cursor: pointer;
     appearance: none;
-    border-radius: 0; /* Ensure there are no rounded corners */
-    transition: border-color 0.3s ease; /* Smooth transition for border color */
+    border-radius: 0;
+    transition: border-color 0.3s ease; 
 }
 
 select:focus {
-    border-bottom-color: #007bff; /* Change the bottom border color on focus */
+    border-bottom-color: #007bff; 
     outline: none;
-    box-shadow: none; /* Remove the box-shadow */
+    box-shadow: none; 
 }
 
 .custom-select::after {
@@ -113,7 +111,7 @@ select:focus {
 }
 
 .custom-select select::-ms-expand {
-    display: none; /* For Internet Explorer */
+    display: none; 
 }
 
 .product_card {
@@ -187,7 +185,7 @@ color: #666666;
 .cart-d {
     position: relative;
     display: inline-block;
-    margin-bottom: 20px; /* Adjust as needed */
+    margin-bottom: 20px;
     margin-top: 10px;
 }
 
@@ -206,4 +204,30 @@ color: #666666;
     display: inline-block;
     margin-bottom: 0px;
     margin-top:     0px;
+}
+
+/* Add smooth scrolling to the entire document */
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+    -webkit-overflow-scrolling: touch; 
+}
+
+
+@media (max-width: 600px) {
+   
+    body {
+        font-size: 14px; 
+    }
+  
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
 }
