@@ -3,6 +3,8 @@ import {  Router } from '@angular/router';
 import { MultiStepQuizComponent } from '../multi-step-quiz/multi-step-quiz.component';
 import { MobileNumberSignComponent } from '../mobile-number-sign/mobile-number-sign.component';
 import { MatDialog } from '@angular/material/dialog';
+import { CartBarComponent } from '../cart-bar/cart-bar.component';
+import { MenuBarComponent } from '../menu-bar/menu-bar.component';
 
 @Component({
   selector: 'app-header',
@@ -30,30 +32,36 @@ export class HeaderComponent {
     this.hideComponent = true;
     this.openAddDepartmentDiologue();
   }
-  
-  openAddDepartmentDiologue() {
-    // if (this.dialogRef) {
-    //   this.dialogRef.close(); // Close the previous dialog if open
-    // }
 
+  openAddDepartmentDiologue() {
     this.dialogRef = this.dialog.open(MobileNumberSignComponent, {
       width: '30%',
       height:'100%',
-      // disableClose: false,
       closeOnNavigation:true
-      // data: categoryData,
-      // backdropClass: 'dialog-backdrop', 
-      // panelClass: 'custom-dialog-container'  
-
-
-
     });
-    // dialogConfig.backdropClas  s = 'dialog-background'; // Add this line
+
 
     this.dialogRef.afterClosed().subscribe((result:any) => {
       console.log(`Dialog result: ${result}`);
     });
     
+  }
+
+
+  openCartDialog() {
+    this.dialog.open(CartBarComponent, {
+      width: '40%', // Set the width of the dialog
+      height: '100%', // Optionally set the height
+      position: { right: '0' } // Position the dialog on the right
+    });
+  }
+
+  openMenuDialog(){
+    this.dialog.open(MenuBarComponent, {
+      width: '30%', // Set the width of the dialog
+      height: '100%', // Optionally set the height
+      position: { left: '0' } // Position the dialog on the right
+    });
   }
 
 }

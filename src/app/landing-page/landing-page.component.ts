@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { MobileNumberSignComponent } from '../mobile-number-sign/mobile-number-sign.component';
 import { MatDialog } from '@angular/material/dialog';
+import { CartBarComponent } from '../cart-bar/cart-bar.component';
+import { MenuBarComponent } from '../menu-bar/menu-bar.component';
 
 @Component({
   selector: 'app-landing-page',
@@ -39,30 +41,38 @@ export class LandingPageComponent {
 
 
   openAddDepartmentDiologue() {
-    // if (this.dialogRef) {
-    //   this.dialogRef.close(); // Close the previous dialog if open
-    // }
-
     this.dialogRef = this.dialog.open(MobileNumberSignComponent, {
       width: '30%',
       height:'100%',
       // disableClose: false,
-      closeOnNavigation:true
-      // data: categoryData,
-      // backdropClass: 'dialog-backdrop', 
-      // panelClass: 'custom-dialog-container'  
-
-
-
+      closeOnNavigation:true,
+      disableClose: false
     });
-    // dialogConfig.backdropClas  s = 'dialog-background'; // Add this line
+   
 
     this.dialogRef.afterClosed().subscribe((result:any) => {
       console.log(`Dialog result: ${result}`);
     });
     
   }
+  openCartDialog() {
+    this.dialog.open(CartBarComponent, {
+      width: '40%', 
+      height: '100%', 
+      position: { right: '0' },
+      disableClose: false
+    });
+  }
 
+  openMenuDialog(){
+    this.dialog.open(MenuBarComponent, {
+      width: '30%', 
+      height: '100%', 
+      position: { left: '0' }, 
+      disableClose: false,
+      closeOnNavigation:true,
+    });
+  }
 
 
 }

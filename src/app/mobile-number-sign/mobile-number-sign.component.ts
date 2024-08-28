@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
  import { PersonalDetailsComponent } from '../personal-details/personal-details.component';
+ import { MatDialogRef } from '@angular/material/dialog';
 
 
 
@@ -17,13 +18,17 @@ export class MobileNumberSignComponent {
   hideComponent = false;
 
 
-  constructor(private fb: FormBuilder, private router: Router, private dialog: MatDialog) {
+  constructor(private dialogRef1: MatDialogRef<MobileNumberSignComponent>,private fb: FormBuilder, private router: Router, private dialog: MatDialog) {
     this.mobileForm = this.fb.group({
       // number: ['', Validators.required],
       mobile: ['', Validators.required,]
     });
   }
 
+
+  closeDialog(): void {
+    this.dialogRef1.close(); // Close the dialog
+  }
   onSubmit() {
     if (this.mobileForm.valid) {
       console.log(this.mobileForm.value);

@@ -27,6 +27,8 @@ import { ShippingInformationComponent } from './shipping-information/shipping-in
 import { MatDialogModule } from '@angular/material/dialog';
 import { MenuBarComponent } from './menu-bar/menu-bar.component';
 import { CartBarComponent } from './cart-bar/cart-bar.component';
+import { PopupComponent } from './popup/popup.component';
+
 
 @NgModule({
   declarations: [
@@ -53,6 +55,7 @@ import { CartBarComponent } from './cart-bar/cart-bar.component';
     ShippingInformationComponent,
     MenuBarComponent,
     CartBarComponent,
+    PopupComponent,
 
   ],
   imports: [

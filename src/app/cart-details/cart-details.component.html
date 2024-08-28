@@ -3,7 +3,7 @@
   <div class="row mb-5">
     <div class="col-12">
       <div class="step-indicator d-flex align-items-center">
-        <img class="size-img me-3" src="../../assets/images/image 17.png" alt="Logo">
+        <img class="size-img me-3" (click)="navigateTo('')" src="../../assets/images/image 17.png" alt="Logo">
 
         <div class="step active">1</div>
         <div class="step-title active-title">Cart ----------</div>
@@ -71,7 +71,7 @@
           <strong class="right-text" style="font-weight: 700;">Subtotal</strong>
           <strong class="pri" style="color: #FF6900;">₹18,666</strong>
         </div>
-        <button class="btn btn-orange w-100 mt-4 py-3">Continue</button>
+        <button class="btn btn-orange w-100 mt-4 py-3" (click)=" navigateToShippingDetails()">Continue</button>
       </div>
     </div>
   </div>

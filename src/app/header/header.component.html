@@ -20,7 +20,7 @@
     </div>
     <div class="row align-items-center header-row">
         <div class="col-6 col-md-4 text-center">
-            <button class="menu-btn">
+            <button class="menu-btn" (click)="openMenuDialog()">
                 <img src="../../assets/images/Group 2.png" alt="Menu">
             </button>
             <img src="../../assets/images/image 17.png"  alt="Logo" class="logo" [routerLink]="['/landing-page']" style="cursor: pointer;">
@@ -36,7 +36,7 @@
             <ol>
                 <li class="header-icon-1" (click)="navigateToSignIn()"><i class="mar1 fa-regular fa-user"></i>Sign Up/Sign In</li> |
                 <li class="header-icon-1" (click)="navigateToWishlist()"><i class="mar1 fa-regular fa-heart"></i>Wishlist</li> |
-                <li class="header-icon-1"><i class="mar1 fa-solid fa-cart-shopping"></i>Cart</li>
+                <li class="header-icon-1" (click)="openCartDialog()"><i class="mar1 fa-solid fa-cart-shopping"></i>Cart</li>
             </ol>
         </div>
     </div>

@@ -3,9 +3,14 @@
     background-color: #f0eeee;
     margin: 0 !important;
     padding: 0 !important;
+    overflow-x: hidden;
+}
+.con1{
+    width: 70%;
+
 }
 
-/* First Row Styling */
+
 .first-row {
     background-color: #ff6600;
     margin: 0 !important;
@@ -21,7 +26,6 @@
     font-size: 1.2rem;
 }
 
-/* Second Row Styling */
 .second-row {
     border-bottom: 1px solid #ffffff;
     text-align: center;
@@ -35,6 +39,10 @@
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.2;
+}
+.containers{
+    padding-left: 4.5%;
+    padding-right: 4.5%;
 }
 
 ol {
@@ -71,12 +79,10 @@ ol li {
     font-family: Inter;
 font-size: 20px;
 font-weight: 400;
-/* line-height: 18.67px; */
-/* text-align: left; */
 
 }
 
-/* Header Row Styling */
+
 .header-row {
     border-bottom: 0px solid #ddd;
     display: flex;
@@ -88,7 +94,6 @@ font-weight: 400;
     color: white;
 }
 
-/* Menu Button and Logo Styling */
 .menu-btn {
     background: none;
     border: none;
@@ -101,7 +106,6 @@ font-weight: 400;
     margin-left: 25px;
 }
 
-/* Search Bar Styling */
 .search {
     display: flex;
     align-items: center;
@@ -112,7 +116,7 @@ font-weight: 400;
     background-color: #2c2c2c;;
     flex: 1;
     margin-left: 10px;
-    max-width: 400px; /* Adjust max-width to prevent overflow */
+    max-width: 400px; 
 }
 
 .search-bar {
@@ -130,13 +134,11 @@ font-weight: 400;
     color: white;
 }
 
-/* Placeholder text color */
 .form-control::placeholder {
     color: white;
-    opacity: 1; /* Ensure the placeholder text is fully opaque */
+    opacity: 1; 
 }
 
-/* Media Query for Tablets (max-width: 768px) */
 @media (max-width: 768px) {
     .d-none.d-md-block {
         display: none !important;
@@ -196,7 +198,7 @@ font-weight: 400;
     }
 }
 
-/* Media Query for Mobile (max-width: 576px) */
+
 @media (max-width: 576px) {
     .header-row {
         padding: 5px 0;
@@ -229,7 +231,7 @@ font-weight: 400;
         width: 100%;
         margin-left: 0;
         margin-top: 10px;
-        order: 2; /* Ensure it appears after other elements */
+        order: 2;
     }
 
     .search-bar {
@@ -253,11 +255,7 @@ font-weight: 400;
         justify-content: center;
     }
 }
-/* .imgphoto{
-    border-radius: 50%;
-    background-color: #fff;
-    border: 1px solid #ff6600; */
-/* } */
+
 .prod1{
     display: flex;
     flex-direction: row;
@@ -265,7 +263,7 @@ font-weight: 400;
 
 }
 .prod2{
-    /* flex-basis: 20%; */
+   
     min-width: 200px;
     max-width: 235px; 
      margin: 5px 10px 5px 10px;
@@ -309,11 +307,6 @@ font-weight: 400;
     color: rgba(36, 155, 62, 1);
     font-weight: 700;
 }
-
-
-
-
-
 .cart-d{
     font-family: Inter;
 font-size: 28px;
@@ -438,5 +431,4 @@ color: #666666;
         
         }
     }
-    
     

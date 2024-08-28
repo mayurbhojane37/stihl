@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-payment-details',
@@ -7,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class PaymentDetailsComponent {
 
+  constructor(private router:Router){}
+
+  navigateTo(route: string) {
+    this.router.navigate([route]);
+  }
+
+  navigateToSummery(){
+    this.router.navigate(['/summery'])
+  }
 }

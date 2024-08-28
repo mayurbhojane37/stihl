@@ -44,31 +44,31 @@
     text-align: left;
 }
 
-/* Responsive styles */
+
 @media (max-width: 768px) {
     .step-indicator {
-        flex-direction: column; /* Stack steps vertically on smaller screens */
+        flex-direction: column; 
         align-items: flex-start;
     }
 
     .step {
-        width: 35px; /* Smaller width for mobile screens */
+        width: 35px; 
         height: 35px;
         font-size: 12px;
-        margin-right: 0; /* Remove right margin when stacked */
+        margin-right: 0; 
     }
 
     .step-title, .active-title {
-        font-size: 14px; /* Reduce font size */
-        line-height: 20px; /* Adjust line height */
-        margin-left: 0; /* Remove left margin when stacked */
-        margin-bottom: 15px; /* Space between step titles */
+        font-size: 14px; 
+        line-height: 20px; 
+        margin-left: 0;
+        margin-bottom: 15px;
     }
 }
 
 @media (max-width: 480px) {
     .step {
-        width: 35px; /* Smaller width for very small screens */
+        width: 35px; 
         height: 35px;
         font-size: 10px;
     }
@@ -135,7 +135,7 @@ color: #080808;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 0.5rem; /* Space between elements */
+    gap: 0.5rem;
   }
   
   .price-details .text-danger {
@@ -244,7 +244,7 @@ margin-right: 7rem;
 .pam1{
     font-family: Inter;
 font-size: 20px;
-font-weight: 550;
+font-weight: 50;
 line-height: 21.61px;
 text-align: left;
 
@@ -254,9 +254,6 @@ text-align: left;
     font-size: 20px;
     font-weight: 550;
     line-height: 21.61px;
-    
-    
-
 }
 .cash1{
     margin-right: 1rem;

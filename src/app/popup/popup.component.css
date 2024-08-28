@@ -1,0 +1,125 @@
+/* Popup overlay styling */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Popup content styling */
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+/* Container that centers its content */
+.sunbit {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Circle styling */
+.circle {
+    width: 150px;
+    height: 150px;
+    border: 1px solid rgb(203, 203, 203);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+/* Check icon styling */
+.circle-check {
+    font-size: 50px;
+}
+
+/* Text styling */
+.text {
+    margin-top: 15px; /* Space between the circle and text */
+}
+
+.text1 {
+    font-family: Inter, sans-serif; /* Fallback font-family */
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #249B3E;
+}
+
+.text2 {
+    font-family: Inter, sans-serif; /* Fallback font-family */
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .popup-content {
+        padding: 15px;
+    }
+    
+    .circle {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .circle-check {
+        font-size: 40px;
+    }
+    
+    .text1 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    
+    .text2 {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .popup-content {
+        padding: 10px;
+    }
+    
+    .circle {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .circle-check {
+        font-size: 30px;
+    }
+    
+    .text1 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    
+    .text2 {
+        font-size: 12px;
+        line-height: 20px;
+    }
+}

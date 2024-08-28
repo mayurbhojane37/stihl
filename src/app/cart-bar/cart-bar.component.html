@@ -1,7 +1,7 @@
 <div class="container">
     <div class="col-12 d-flex justify-content-between align-items-center first-div mb-3">
         <p class="shopping-cart-title">Shopping Cart <span>(1 Item)</span></p>
-        <p class="xsign">x</p>
+        <p class="xsign" (click)="closeDialog()">x</p>
     </div>
 
     <div class="offer-section text-center mb-4">
@@ -51,7 +51,7 @@
                 </div>
             </div>
             <div class="d-grid gap-2">
-                <button class="btn btn-proceed" type="button">Proceed</button>
+                <button class="btn btn-proceed" type="button" (click)="navigateToCartComponent()" (click)="closeDialog()">Proceed</button>
             </div>
         </div>
     </div>

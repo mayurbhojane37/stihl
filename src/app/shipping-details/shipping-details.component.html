@@ -1,9 +1,9 @@
 <div class="container my-4">
     <div class="step-indicator mb-5">
         <div>
-            <img class="size-img" src="../../assets/images/image 17.png" alt="">
+            <img  class="size-img" (click)="navigateTo('')" src="../../assets/images/image 17.png" alt="">
         </div>
-        <div class="step">1</div>
+        <div class="step"(click)="navigateTo('cart-details')">1</div>
         <div class="step-title">Cart ----------</div>
         <div class="step active">2</div>
         <div class="step-title active-title">Address -------------</div>
@@ -46,7 +46,7 @@
             </div>
         </div>
            <div>
-            <button class="btn btn-orange w-100 mt-4 py-3">Continue</button>
+            <button class="btn btn-orange w-100 mt-4 py-3"(click)=" navigateToPaymentDetails()">Continue</button>
            </div>   
           
         </div>
