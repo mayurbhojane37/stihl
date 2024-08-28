@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-battery1',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class Battery1Component {
 
+  constructor(private router:Router){}
+
+
+  navigatetobattery2(){
+    this.router.navigate(['']);
+  }
 }

@@ -1,6 +1,6 @@
 <app-header></app-header>
 
-<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
             aria-current="true" aria-label="Slide 1"></button>
@@ -117,7 +117,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+                    <div class="col-sm-6 col-md-4 col-lg-3 mt-4" (click)="navigatetobattery2()">
                         <div class="card product_card">
                             <div class="product-card">
                                 <div class="product_img">

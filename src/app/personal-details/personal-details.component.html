@@ -1,0 +1,43 @@
+<div class="container d-flex justify-content-center mt-5 all" *ngIf="!hideComponent">
+    <div class="col-12"> <!-- Adjust this column width as needed -->
+      <div class="row d-flex justify-content-center">
+        <div class="step-indicator mb-5">
+          <div class="step active">1</div>
+          <div class="step-title active-title">Personal Details ----------  </div>
+          <div class="step">2</div>
+          <div class="step-title">Product Details  ------------- </div>
+          <div class="step">3</div>
+          <div class="step-title">Shipment Details</div>
+        </div>
+      </div>
+      
+  
+      <form [formGroup]="personalDetailsForm" (ngSubmit)="onSubmit()">
+        <div class="row d-flex justify-content-center">
+          <h2 class="form-title">Personal Details</h2>
+        </div>
+        <div class="row d-flex mb-5">
+          <div class="col-md-6">
+            <label for="fullName">Full name</label>
+            <input type="text" id="fullName" formControlName="fullName" class="form-control custom-placeholder" placeholder="Enter your Full name" />
+          </div>
+  
+          <div class="col-md-6">
+            <label for="phoneNumber">Phone No</label>
+            <input type="text" id="phoneNumber" formControlName="phoneNumber" class="form-control custom-placeholder" placeholder="Enter your Phone Number" />
+          </div>
+        </div>
+  
+        <div class="form-group col-md-6 mb-5">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" formControlName="email" class="form-control custom-placeholder" placeholder="Enter your E-mail" />
+        </div>
+  
+        <div class="d-flex justify-content-end">
+            <button type="submit" class="btn btn-lg color-button"[disabled]="personalDetailsForm.invalid">Continue</button>
+          </div>
+      </form>
+    </div>
+  </div>
+  
+  

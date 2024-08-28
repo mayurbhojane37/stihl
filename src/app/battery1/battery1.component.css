@@ -1,5 +1,11 @@
 .sub_categories{
     color: rgba(102, 102, 102, 1);
+    font-family: Inter;
+font-size: 28px;
+font-weight: 400;
+line-height: 40px;
+text-align: left;
+
 }
 
 #points {

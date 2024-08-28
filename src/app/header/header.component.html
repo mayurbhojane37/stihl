@@ -13,8 +13,8 @@
                 <li class="header-icon"><i class="mar fa-solid fa-location-dot"></i>Deliver to 423651</li> |
                 <li class="header-icon"><i class="mar fa-solid fa-truck"></i>Track your order</li> |
                 <li class="header-icon"><i class="mar fa-solid fa-gift"></i>All Offers</li> |
-                <li class="header-icon"><i class="mar fa-solid fa-file-circle-question"></i>Buying Guide </li> |
-                <li class="header-icon"><i class="mar fa-solid fa-cart-arrow-down"></i>Customer Order</li>
+                <li class="header-icon"><i class="mar fa-solid fa-file-circle-question"(click)="navigateToMultiStepQuiz()"></i>Buying Guide </li> |
+                <li class="header-icon" (click)="navigateToMobileSign()"><i class="mar fa-solid fa-cart-arrow-down"></i>Customer Order</li>
             </ol>
         </div>
     </div>
@@ -23,7 +23,7 @@
             <button class="menu-btn">
                 <img src="../../assets/images/Group 2.png" alt="Menu">
             </button>
-            <img src="../../assets/images/image 17.png" alt="Logo" class="logo">
+            <img src="../../assets/images/image 17.png"  alt="Logo" class="logo" [routerLink]="['/landing-page']" style="cursor: pointer;">
         </div>
         <div class="col-md-4 d-none d-md-block">
             <div class="search">
@@ -34,8 +34,8 @@
         </div>
         <div class="col-6 col-md-4 text-center">
             <ol>
-                <li class="header-icon-1"><i class="mar1 fa-regular fa-user"></i>Sign Up/Sign In</li> |
-                <li class="header-icon-1"><i class="mar1 fa-regular fa-heart"></i>Wishlist</li> |
+                <li class="header-icon-1" (click)="navigateToSignIn()"><i class="mar1 fa-regular fa-user"></i>Sign Up/Sign In</li> |
+                <li class="header-icon-1" (click)="navigateToWishlist()"><i class="mar1 fa-regular fa-heart"></i>Wishlist</li> |
                 <li class="header-icon-1"><i class="mar1 fa-solid fa-cart-shopping"></i>Cart</li>
             </ol>
         </div>

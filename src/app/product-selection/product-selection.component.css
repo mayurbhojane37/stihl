@@ -1,0 +1,95 @@
+
+  
+  .step-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 20px;
+  }
+  
+  .step {
+    width: 40px; /* Adjust width and height to make it square */
+    height: 40px;
+    background-color: #ffffff;
+    color: #909194;
+    border-radius: 5px; /* Set border-radius to 5px for square with rounded corners */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    border: 1px solid #909194;
+    ;
+  }
+  
+  .step-title {
+    font-size: 16px;
+    color: #bfbfbf;
+    margin-left: 10px;
+  }
+  
+  .active {
+    background-color: #f5811f;
+    color: white;
+  }
+  
+  .active-title {
+    color: #000;
+     font-family: Inter;
+    font-size: 24.25px;
+    font-weight: 500;
+    line-height: 40.3px;
+    text-align: left;
+    ;
+  }
+
+
+
+  .color-button{
+    color: white;
+    background-color: #FF6900;
+border-radius: 2px 0px 0px 0px;
+width: 175px;
+height: 50px;
+top: 593px;
+left: 892px;
+gap: 0px;
+border-radius: 2px 0px 0px 0px;
+opacity: 0px;
+
+
+  }
+
+  label{
+    font-family: Inter;
+font-size: 16px;
+font-weight: 400;
+line-height: 19.36px;
+text-align: left;
+color: #818181;
+margin-bottom: 10px;
+
+  }
+  
+  .custom-placeholder::placeholder{
+    color: #111719;
+    opacity: 1; 
+    font-family: Inter;
+font-size: 20px;
+font-weight: 400;
+line-height: 26.6px;
+text-align: right;
+padding: 1.rem;
+}
+  .form-control:focus {
+    border-color: #f5811f; 
+    box-shadow: 0 0 5px rgba(245, 129, 31, 0.5); 
+    outline: none; 
+   
+}
+.form-control{
+    padding: .700rem .75rem;
+}
+
+.all{
+  padding: 40px;
+    } 

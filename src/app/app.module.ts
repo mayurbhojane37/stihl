@@ -20,7 +20,13 @@ import { Battery1Component } from './battery1/battery1.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { NewsletterComponent } from './newsletter/newsletter.component';
-
+import { MobileNumberSignComponent } from './mobile-number-sign/mobile-number-sign.component';
+import { PersonalDetailsComponent } from './personal-details/personal-details.component';
+import { ProductSelectionComponent } from './product-selection/product-selection.component';
+import { ShippingInformationComponent } from './shipping-information/shipping-information.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MenuBarComponent } from './menu-bar/menu-bar.component';
+import { CartBarComponent } from './cart-bar/cart-bar.component';
 
 @NgModule({
   declarations: [
@@ -41,13 +47,20 @@ import { NewsletterComponent } from './newsletter/newsletter.component';
     SidebarComponent,
     LandingPageComponent,
     NewsletterComponent,
+    MobileNumberSignComponent,
+    PersonalDetailsComponent,
+    ProductSelectionComponent,
+    ShippingInformationComponent,
+    MenuBarComponent,
+    CartBarComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatDialogModule
    
   ],
   providers: [],

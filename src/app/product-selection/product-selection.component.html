@@ -1,0 +1,56 @@
+<div class="container d-flex justify-content-center mt-5 all" *ngIf="!hideComponent">
+    <div class="col-12">
+      <div class="row d-flex justify-content-center">
+        <div class="step-indicator mb-5">
+          <div class="step">1</div>
+          <div class="step-title">Personal Details ----------</div>
+          <div class="step active">2</div>
+          <div class="step-title active-title">Product Details -------------</div>
+          <div class="step">3</div>
+          <div class="step-title">Shipment Details</div>
+        </div>
+      </div>
+  
+      <form [formGroup]="productSelection" (ngSubmit)="onSubmit()">
+        <div class="row d-flex justify-content-center">
+          <h2 class="form-title ">Product Details</h2>
+        </div>
+  
+        <div class="row d-flex mb-5">
+          <div class="col-md-6">
+            <label for="productName">Select the Product you want to Custom Buy</label>
+            <!-- <select id="productName" formControlName="productName" class="form-control custom-placeholder">
+              <option value="" disabled selected>Select a Product</option>
+              <option value="Product1">MSA 200 Electric Chainsaw</option>
+              <option value="Product2">MSA 160 Cordless Chainsaw</option>
+        
+            </select> -->
+
+            <select class="form-select form-select-lg mb-3"formControlName="productName" aria-label=".form-select-lg example">
+                <option value="">Select a Product</option>
+                <option value="1">MSA 200 Electric Chainsaw</option>
+                <option value="2">MSA 160 Cordless Chainsaw</option>
+               
+              </select>
+          </div>
+  
+          <div class="col-md-6">
+            <label for="quantity">Quantity</label>
+            <select class="form-select form-select-lg mb-3" formControlName="quantity" aria-label=".form-select-lg example">
+                <option value="">Qantity:10</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+               
+              </select>
+          </div>
+        </div>
+  
+      
+  
+        <div class="d-flex justify-content-end">
+          <button type="submit" class="btn btn-lg color-button"[disabled]="productSelection.invalid">Continue</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  

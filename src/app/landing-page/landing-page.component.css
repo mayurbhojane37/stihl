@@ -68,6 +68,12 @@ ol li {
 
 .sthiltxt {
     color: #ff6600;
+    font-family: Inter;
+font-size: 20px;
+font-weight: 400;
+/* line-height: 18.67px; */
+/* text-align: left; */
+
 }
 
 /* Header Row Styling */
@@ -103,7 +109,7 @@ ol li {
     border: 1px solid rgb(241, 235, 235);
     border-radius: 10px;
     padding: 0.45rem;
-    background-color: #020202;
+    background-color: #2c2c2c;;
     flex: 1;
     margin-left: 10px;
     max-width: 400px; /* Adjust max-width to prevent overflow */
@@ -119,7 +125,7 @@ ol li {
 
 .form-control {
     border: none !important;
-    background-color: #020202;
+    background-color: #2c2c2c;
     width: 100%;
     color: white;
 }
@@ -247,13 +253,24 @@ ol li {
         justify-content: center;
     }
 }
-
 /* .imgphoto{
     border-radius: 50%;
     background-color: #fff;
     border: 1px solid #ff6600; */
 /* } */
+.prod1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 
+}
+.prod2{
+    /* flex-basis: 20%; */
+    min-width: 200px;
+    max-width: 235px; 
+     margin: 5px 10px 5px 10px;
+
+}
 
 .product_card{
     width: 100% !important;
@@ -269,8 +286,9 @@ ol li {
 }
 .product_img{
     /* background-color: #e4e4e4; */
-    height: 100% !important;
+    height: 250px !important;
     width: 100% !important;
+    background-color: #F5F5F5;
 }
 .product_title{
     font-weight: bold;
@@ -404,4 +422,21 @@ text-align: center;
 color: #666666;
 
     }
+
+
+    @media only screen and (width < 720px) {
+        .prod1{
+            display: flex;
+            justify-content: center;
+            
+        
+        }
+        .prod2{
+            min-width: 235px;
+            max-width: px;
+            
+        
+        }
+    }
+    
     
