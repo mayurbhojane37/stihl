@@ -12,11 +12,11 @@ padding: 40px;
   }
 
   .step {
-    width: 40px; /* Adjust width and height to make it square */
+    width: 40px;
     height: 40px;
     background-color: #ffffff;
     color: #909194;
-    border-radius: 5px; /* Set border-radius to 5px for square with rounded corners */
+    border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,14 +96,14 @@ padding: 1.rem;
 .form-select{
     padding: .700rem .75rem;
 }
-/* Ensure the body and html fill the viewport */
+
 body, html {
     height: 100%;
     margin: 0;
-    background-color: #f0f0f0; /* Optional: Background color for better visibility */
+    background-color: #f0f0f0;
 }
 
-/* Popup overlay styling */
+
 .popup {
   position: fixed;
   top: 0;
@@ -117,7 +117,7 @@ body, html {
   z-index: 1000;
 }
 
-/* Popup content styling */
+
 .popup-content {
   background: white;
   padding: 30px;
@@ -129,7 +129,6 @@ body, html {
   justify-content: center;
 }
 
-/* Container that centers its content */
 .sunbit {
   text-align: center;
   display: flex;
@@ -138,7 +137,7 @@ body, html {
   justify-content: center;
 }
 
-/* Circle styling */
+
 .circle {
   width: 220px;
   height: 220px;
@@ -150,18 +149,18 @@ body, html {
   background-color: white;
 }
 
-/* Check icon styling */
+
 .circle-check {
   font-size: 90px;
 }
 
-/* Text styling */
+
 .text {
-  margin-top: 20px; /* Space between the circle and text */
+  margin-top: 20px;
 }
 
 .text1 {
-  font-family: Inter, sans-serif; /* Fallback font-family */
+  font-family: Inter, sans-serif;
   font-size: 45px;
   font-weight: 500;
   line-height: 38.73px;
@@ -169,7 +168,7 @@ body, html {
 }
 
 .text2 {
-  font-family: Inter, sans-serif; /* Fallback font-family */
+  font-family: Inter, sans-serif;
   font-size: 18px;
   font-weight: 300;
   line-height: 21.78px;

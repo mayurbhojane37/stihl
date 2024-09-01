@@ -8,11 +8,11 @@
   }
   
   .step {
-    width: 40px; /* Adjust width and height to make it square */
+    width: 40px;
     height: 40px;
     background-color: #ffffff;
     color: #909194;
-    border-radius: 5px; /* Set border-radius to 5px for square with rounded corners */
+    border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;

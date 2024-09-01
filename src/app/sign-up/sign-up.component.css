@@ -113,7 +113,6 @@ input[type="password" i]:focus {
         padding: 20px;
     }
 
-    /* Stack form fields vertically on small screens */
     .row.mb-3 > div {
         flex: 0 0 100%;
         max-width: 100%;

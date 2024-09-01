@@ -28,6 +28,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MenuBarComponent } from './menu-bar/menu-bar.component';
 import { CartBarComponent } from './cart-bar/cart-bar.component';
 import { PopupComponent } from './popup/popup.component';
+import { Battery2Component } from './battery2/battery2.component';
 
 
 @NgModule({
@@ -56,6 +57,7 @@ import { PopupComponent } from './popup/popup.component';
     MenuBarComponent,
     CartBarComponent,
     PopupComponent,
+    Battery2Component,
 
   ],
   imports: [

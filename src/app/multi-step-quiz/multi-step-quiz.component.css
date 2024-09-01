@@ -6,7 +6,7 @@
     margin: 0 auto;
     padding: 20px;
     background: white;
-    position: relative; /* Ensure this is present */
+    position: relative; 
   }
   
   .back-button {
@@ -46,7 +46,7 @@
     font-family: Inter;
     font-weight: 400;
     color: #616161;
-    margin: 0 auto; /* Center the buttons */
+    margin: 0 auto; 
   }
   
   .product-options button:hover {
@@ -64,11 +64,6 @@
     margin-top: 2rem;
     border-top: 1px solid #d1cfcf;
   }
-
-
-
-
-
 
 
   .heading-title {
@@ -97,10 +92,10 @@
 }
 
 .custom-card {
-    width: 100%; /* Make the card take full width */
-    max-width: 250px; /* Control the max width */
+    width: 100%; 
+    max-width: 250px; 
     margin: 10px;
-    text-align: left; /* Align text to the left */
+    text-align: left;
 }
 
 .row_container {
@@ -136,62 +131,58 @@
     margin-bottom: 0rem !important;
 }
 
-/* Removed unnecessary styles */
-
-/* Base style for the range input */
 input[type="range"] {
-  -webkit-appearance: none; /* Remove default styling in WebKit browsers */
-  width: 100%; /* Full width of the container */
-  height: 8px; /* Height of the track */
-  background: transparent; /* Transparent background to apply custom track styling */
-  border-radius: 5px; /* Rounded corners for the track */
-  outline: none; /* Remove outline */
-  padding: 0; /* Remove default padding */
+  -webkit-appearance: none; 
+  width: 100%;
+  height: 8px;
+  background: transparent;
+  border-radius: 5px; 
+  outline: none;
+  padding: 0; 
 }
 
-/* Style for the track in WebKit browsers (Chrome, Safari) */
+
 input[type="range"]::-webkit-slider-runnable-track {
   width: 100%;
   height: 8px;
-  background: rgba(255, 105, 0, 0.3); /* Light orange track color */
+  background: rgba(255, 105, 0, 0.3); 
   border-radius: 5px;
 }
 
-/* Style for the thumb (handle) in WebKit browsers */
+
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
-  height: 20px; /* Height of the thumb */
-  width: 20px; /* Width of the thumb */
-  background: rgba(255, 105, 0, 1); /* Thumb color */
-  border-radius: 50%; /* Round shape */
-  cursor: pointer; /* Pointer cursor on hover */
+  height: 20px; 
+  width: 20px; 
+  background: rgba(255, 105, 0, 1);
+  border-radius: 50%; 
+  cursor: pointer;
   position: relative;
-  margin-top: -6px; /* Adjust thumb to align with track */
+  margin-top: -6px;
 }
 
-/* Style for the track in Firefox */
+
 input[type="range"]::-moz-range-track {
   width: 100%;
   height: 8px;
-  background: rgba(255, 105, 0, 0.3); /* Light orange track color */
+  background: rgba(255, 105, 0, 0.3);
   border-radius: 5px;
 }
 
-/* Style for the thumb (handle) in Firefox */
+
 input[type="range"]::-moz-range-thumb {
   height: 20px;
   width: 20px;
-  background: rgba(255, 105, 0, 1); /* Thumb color */
+  background: rgba(255, 105, 0, 1);
   border-radius: 50%;
   cursor: pointer;
 }
 
-/* Style for the track in Internet Explorer */
 input[type="range"]::-ms-track {
   width: 100%;
   height: 8px;
-  background: transparent; /* Transparent track to style using fill-lower and fill-upper */
-  border-color: transparent; /* Remove border */
+  background: transparent;
+  border-color: transparent;
   color: transparent; 
 }
 
@@ -237,7 +228,7 @@ select {
 select:focus {
   border-bottom-color: #007bff; 
   outline: none;
-  box-shadow: none; /* Remove the box-shadow */
+  box-shadow: none;
 }
 
 .custom-select::after {
@@ -251,7 +242,7 @@ select:focus {
 }
 
 .custom-select select::-ms-expand {
-  display: none; /* For Internet Explorer */
+  display: none;
 }
 
 .product_card {

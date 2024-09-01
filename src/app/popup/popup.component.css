@@ -1,4 +1,4 @@
-/* Popup overlay styling */
+
 .popup {
     position: fixed;
     top: 0;
@@ -12,7 +12,7 @@
     z-index: 1000;
 }
 
-/* Popup content styling */
+
 .popup-content {
     background: white;
     padding: 20px;
@@ -26,7 +26,6 @@
     max-height: 90%;
 }
 
-/* Container that centers its content */
 .sunbit {
     text-align: center;
     display: flex;
@@ -35,7 +34,6 @@
     justify-content: center;
 }
 
-/* Circle styling */
 .circle {
     width: 150px;
     height: 150px;
@@ -47,18 +45,16 @@
     background-color: white;
 }
 
-/* Check icon styling */
 .circle-check {
     font-size: 50px;
 }
 
-/* Text styling */
 .text {
-    margin-top: 15px; /* Space between the circle and text */
+    margin-top: 15px;
 }
 
 .text1 {
-    font-family: Inter, sans-serif; /* Fallback font-family */
+    font-family: Inter, sans-serif;
     font-size: 24px;
     font-weight: 500;
     line-height: 30px;
@@ -66,14 +62,13 @@
 }
 
 .text2 {
-    font-family: Inter, sans-serif; /* Fallback font-family */
+    font-family: Inter, sans-serif;
     font-size: 16px;
     font-weight: 300;
     line-height: 24px;
     text-align: center;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .popup-content {
         padding: 15px;

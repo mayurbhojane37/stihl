@@ -1,16 +1,16 @@
-/* Step Indicator Styles */
+
 .step-indicator {
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Align items to the start (left side) */
+    justify-content: flex-start;
     margin-bottom: 20px;
     flex-wrap: wrap;
 }
 
 
 .step {
-    width: 45px; /* Consistent width for all steps */
-    height: 45px; /* Consistent height for all steps */
+    width: 45px;
+    height: 45px;
     background-color: #ffffff;
     color: #909194;
     border-radius: 5px;
@@ -20,7 +20,7 @@
     font-size: 14px;
     border: 1px solid #909194;
     margin-right: 10px;
-    margin-bottom: 10px; /* Add bottom margin for spacing when stacked */
+    margin-bottom: 10px;
 }
 
 .step-title {
@@ -29,7 +29,6 @@
     margin-left: 10px;
 }
 
-/* Adjust active step styling */
 .active {
     background-color: #f5811f;
     color: white;
@@ -209,7 +208,7 @@ text-align: left;
 .cart-d {
     position: relative;
     display: inline-block;
-    margin-bottom: 20px; /* Adjust as needed */
+    margin-bottom: 20px;
 }
 
 .cart-d::after {

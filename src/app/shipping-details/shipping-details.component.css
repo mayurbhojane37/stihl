@@ -1,4 +1,4 @@
-/* Ensure the body and html take up the full height of the viewport */
+
 html, body {
     height: 100%;
     margin: 0;
@@ -6,37 +6,35 @@ html, body {
     flex-direction: column;
 }
 
-/* Container flex setup */
+
 .container {
-    flex: 1; /* This makes the container take up the remaining space */
+    flex: 1;
 }
 
-/* Footer styling */
 .footer {
     background-color: #f8f9fa;
     padding: 15px 0;
-    margin-top: auto; /* Pushes footer to the bottom */
-    width: 100%; /* Full width of the viewport */
+    margin-top: auto;
+    width: 100%;
     text-align: center;
 }
 
-/* Additional styling for footer items */
 .foter {
     margin-left: 1rem;
 }
 
-/* Step Indicator Styles */
+
 .step-indicator {
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Align items to the start (left side) */
+    justify-content: flex-start;
     margin-bottom: 20px;
     flex-wrap: wrap;
 }
 
 .step {
-    width: 45px; /* Consistent width for all steps */
-    height: 45px; /* Consistent height for all steps */
+    width: 45px;
+    height: 45px;
     background-color: #ffffff;
     color: #909194;
     border-radius: 5px;
@@ -46,7 +44,7 @@ html, body {
     font-size: 14px;
     border: 1px solid #909194;
     margin-right: 10px;
-    margin-bottom: 10px; /* Add bottom margin for spacing when stacked */
+    margin-bottom: 10px;
 }
 
 .step-title {
@@ -55,7 +53,7 @@ html, body {
     margin-left: 10px;
 }
 
-/* Adjust active step styling */
+
 .active {
     background-color: #f5811f;
     color: white;
@@ -84,31 +82,30 @@ html, body {
     letter-spacing: -0.1576792448759079px;
 }
 
-/* Responsive styles */
 @media (max-width: 768px) {
     .step-indicator {
-        flex-direction: column; /* Stack steps vertically on smaller screens */
+        flex-direction: column;
         align-items: flex-start;
     }
 
     .step {
-        width: 35px; /* Smaller width for mobile screens */
+        width: 35px;
         height: 35px;
         font-size: 12px;
-        margin-right: 0; /* Remove right margin when stacked */
+        margin-right: 0;
     }
 
     .step-title, .active-title {
-        font-size: 14px; /* Reduce font size */
-        line-height: 20px; /* Adjust line height */
-        margin-left: 0; /* Remove left margin when stacked */
-        margin-bottom: 15px; /* Space between step titles */
+        font-size: 14px;
+        line-height: 20px;
+        margin-left: 0;
+        margin-bottom: 15px; 
     }
 }
 
 @media (max-width: 480px) {
     .step {
-        width: 35px; /* Smaller width for very small screens */
+        width: 35px; 
         height: 35px;
         font-size: 10px;
     }
@@ -184,7 +181,7 @@ text-align: left;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 0.5rem; /* Space between elements */
+    gap: 0.5rem;
 }
 
 .price-details .text-danger {
@@ -245,7 +242,7 @@ text-align: left;
     text-align: left;
     position: relative;
     display: inline-block;
-    margin-bottom: 20px; /* Adjust as needed */
+    margin-bottom: 20px;
 }
 
 .cart-d::after {

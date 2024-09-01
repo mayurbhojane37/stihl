@@ -1,7 +1,7 @@
 body, html {
   margin: 0;
 padding: 0;
-overflow-x: hidden; /* Prevent horizontal scroll */
+overflow-x: hidden;
 }
 
 .container-fluid {
@@ -9,13 +9,13 @@ overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 .col-lg-6 {
-height: 100vh; /* Full viewport height */
+height: 100vh;
 }
 
 .img-fluid {
-height: 100%; /* Fill the container's height */
-width: 100%;  /* Fill the container's width */
-object-fit: cover; /* Cover the container without stretching */
+height: 100%;
+width: 100%; 
+object-fit: cover;
 }
 
 .sign-in-form {
@@ -33,7 +33,7 @@ max-width: 700px;
 // } */
 
 .sign-in-form .footer {
-  margin-top: auto; /* Pushes the footer to the bottom */
+  margin-top: auto;
   text-align: end;
 
 }
@@ -70,7 +70,7 @@ margin-bottom: none;
 }
 
 .gap-2 {
-  gap: 8px; /* Adjust the gap between the buttons as needed */
+  gap: 8px;
 } 
 
 .button-color{
@@ -86,13 +86,13 @@ margin-bottom: none;
   border-radius: 0;
 }
 .btn-outline-primary {
-  color: black; /* Text color */
-  border-color: black; /* Border color */
+  color: black;
+  border-color: black;
 }
 
 .sign-in-form h2 {
   font-size: 24px;
-  color: #FF6600; /* STIHL's orange color */
+  color: #FF6600;
 }
 
 .text-center span {

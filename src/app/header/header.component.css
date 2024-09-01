@@ -1,11 +1,9 @@
-/* Container Styling */
 .container-fluid {
     background-color: #fff;
     margin: 0 !important;
     padding: 0 !important;
 }
 
-/* First Row Styling */
 .first-row {
     background-color: #ff6600;
     margin: 0 !important;
@@ -21,7 +19,7 @@
     font-size: 1.2rem;
 }
 
-/* Second Row Styling */
+
 .second-row {
     border-bottom: 1px solid #ffffff;
     text-align: center;
@@ -71,7 +69,7 @@ ol li {
     color: #ff6600;
 }
 
-/* Header Row Styling */
+
 .header-row {
     border-bottom: 1px solid #ddd;
     display: flex;
@@ -81,7 +79,7 @@ ol li {
     flex-wrap: wrap;
 }
 
-/* Menu Button and Logo Styling */
+
 .menu-btn {
     background: none;
     border: none;
@@ -94,7 +92,6 @@ ol li {
     margin-left: 25px;
 }
 
-/* Search Bar Styling */
 .search {
     display: flex;
     align-items: center;
@@ -105,7 +102,7 @@ ol li {
     background-color: #EDEDED;
     flex: 1;
     margin-left: 10px;
-    max-width: 400px; /* Adjust max-width to prevent overflow */
+    max-width: 400px; 
 }
 
 .search-bar {
@@ -120,7 +117,7 @@ ol li {
     width: 100%;
 }
 
-/* Media Query for Tablets (max-width: 768px) */
+
 @media (max-width: 768px) {
     .d-none.d-md-block {
         display: none !important;
@@ -179,7 +176,6 @@ ol li {
     }
 }
 
-/* Media Query for Mobile (max-width: 576px) */
 @media (max-width: 576px) {
     .header-row {
         padding: 5px 0;
@@ -212,7 +208,7 @@ ol li {
         width: 100%;
         margin-left: 0;
         margin-top: 10px;
-        order: 2; /* Ensure it appears after other elements */
+        order: 2; 
     }
 
     .search-bar {

@@ -1,12 +1,12 @@
 .rating-number {
     background-color: green;
-    padding: 0 5px; /* Adjust padding to fit your design */
-    color: white; /* Change text color to white for contrast */
-    border-radius: 3px; /* Optional: to make the background look better */
+    padding: 0 5px;
+    color: white;
+    border-radius: 3px;
 }
 
 .rating {
-    display: inline-flex; /* To keep the number and star aligned */
+    display: inline-flex;
     align-items: center; 
 }
 
@@ -15,11 +15,11 @@
 
 
 .product_card {
-    border: 1px solid #ddd; /* Adds a border around the card */
-    border-radius: 8px; /* Rounds the corners of the card */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
-    overflow: hidden; /* Ensures content doesn't overflow the card */
-    transition: transform 0.3s ease; /* Smooth hover effect */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease; 
     /* width: 240px;
     height: 320px;
     gap: 0px;
@@ -28,7 +28,7 @@
 }
 
 .product_card:hover {
-    transform: translateY(-5px); /* Lifts the card slightly on hover */
+    transform: translateY(-5px); 
 }
 
 .product_img {
@@ -53,22 +53,21 @@
     font-weight: 600;
     color: #333;
     margin: 12px 0 8px 0;
-    text-align: center; /* Centers the product title */
-    
+    text-align: center;    
 }
 
 .product_description {
     font-size: 14px;
     color: #777;
     margin-bottom: 12px;
-    text-align: center; /* Centers the product description */
+    text-align: center; 
 }
 
 .product_price {
     font-size: 18px;
     font-weight: 700;
-    color: #ff5722; /* Color for the current price */
-    text-align: center; /* Centers the price */
+    color: #ff5722;
+    text-align: center; 
 }
 
 .old-price {
@@ -79,8 +78,8 @@
 
 .save_price {
     font-size: 11px;
-    /* color: #28a745; Color for the "Save" text */
-    text-align: center; /* Centers the save price */
+   
+    text-align: center; 
     margin-bottom: 8px;
 }
 
@@ -96,5 +95,4 @@ font-size: 25.07px;
 font-weight: 500;
 line-height: 31.71px;
 text-align: left;
-
 }
